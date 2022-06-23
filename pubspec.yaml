@@ -1,0 +1,51 @@
+name: animaps
+description: A map over all animal hospitals in Denmark.
+
+publish_to: 'none'
+
+version: 1.0.0+3
+
+environment:
+  sdk: '>=2.12.0 <3.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_map: ^0.14.0
+  flutter_map_marker_cluster: ^0.4.4
+  firebase_core: ^1.11.0
+  cloud_firestore: ^3.1.6
+  url_launcher: ^6.0.18
+  flutter_riverpod: ^1.0.3
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_launcher_icons: ^0.9.2
+  flutter_native_splash: ^1.2.4
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/hospitals.json
+
+flutter_icons:
+  # flutter pub run flutter_launcher_icons:main
+  android: true
+  ios: true
+  image_path: assets/images/icon.png
+  remove_alpha_ios: true
+  # adaptive_icon_background: '#62ccdd'
+  # adaptive_icon_foreground: assets/images/adaptive-foreground.png
+
+flutter_native_splash:
+  # flutter pub run flutter_native_splash:create
+
+  color: '#F3F4F9'
+  color_dark: '#2B2B2B'
+  #background_image: "assets/background.png"
+  #background_image_dark: "assets/dark-background.png"
+
+  image: assets/images/splash.png
+  #image_dark: assets/splash-invert.png
